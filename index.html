@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,75 +8,149 @@
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Bo Chen</title>
+<title>Bo (Ross) Chen</title>
 <style type="text/css">
 <!--
 body {
-	background-color: #CCC;
-	font-size: medium;
-	text-align: center;
+    background-color: #CCC;
+    font-size: medium;
+    text-align: center;
 }
-.Italic {	font-style: italic;
-}
-.temp {
-	text-align: left;
+.Italic {
+    font-style: italic;
 }
 .temp {
-	text-align: left;
+    text-align: left;
 }
-.lead {	text-align: center;
-	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
-	font-weight: bold;
-	font-size: medium;
+.lead {
+    text-align: center;
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+    font-weight: bold;
+    font-size: medium;
 }
-.temp1 {text-align: left;
+.temp1, .temp2 {
+    text-align: left;
 }
-.temp1 {text-align: left;
+
+/* Language Switcher Styles */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.temp2 {	text-align: left;
+
+.language-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 3px;
 }
-.temp2 {	text-align: left;
+
+.language-btn.active {
+    background-color: #007bff;
+    color: white;
 }
-.temp2 {}
+
+/* Hide non-active language content */
+[lang]:not(.active) {
+    display: none;
+}
 -->
 </style>
 </head>
-
 <body>
-<h1>Bo Chen</h1>
+<!-- Language Switcher -->
+<div class="language-switcher">
+    <button class="language-btn active" data-lang="en">English</button>
+    <button class="language-btn" data-lang="ja">日本語</button>
+</div>
 
-<p>
-  <img src="2019Summer.jpg"  height="300""  name="sshow"></p>
-<p>Undergraduate Student</p>
-<p> Mathmetics, Middle Tenneessee State University 
-  <script type="text/javascript"><!--
-myChange(); 
-// --></script></p>
+<!-- English Content -->
+<div lang="en" class="active">
+    <h1>Bo (Ross) Chen</h1>
+    <p><img src="2019Summer.jpg" height="300" name="sshow"  /></p>
+    <p>Undergraduate Student</p>
+    <p>Mathematics, Middle Tennessee State University</p>
+    
+    <h1 style="text-align: left;">Bio</h1>
+    <p style="text-align: left;">Hi, I'm Bo Chen, my Japanese name is Ryuji Sakamoto. I'm now a final-year undergraduate student majoring in Mathematics, at Department of Mathematical Sciences, Middle Tennessee State University. My research interests lie at enhancing the capabilities of multi-modality models. I am working to boost the efficiency of training workflows in large-scale machine learning systems. I'm actively looking for research opportunities and Ph.D position in 2026 Fall! Feel free to contact if you think I'm a good fit.</p>
 
+    <h1 style="text-align: left;">Personal Information</h1>
+    <ul style="text-align: left;">
+        <li><a href="https://scholar.google.com/citations?hl=en&user=BWfZIIYAAAAJ" target="_blank">Google Scholar</a></li>
+        <li>E-MAIL: bc7b at mtmail.mtsu.com</li>
+        <li><a href="cv-detailed.pdf">Curriculum Vitae (pdf)</a></li>
+    </ul>
+    
+    <h1 style="text-align: left;">Recent Preprints</h1>
+    <ol style="text-align: left;">
+        <li>Bypassing the Exponential Dependency: Looped Transformers Efficiently Learn In-context by Multi-step Gradient Descent, <a href="https://arxiv.org/pdf/2410.11268" target="_blank">arXiv:2410.11268</a></li>
+        <li>HSR-Enhanced Sparse Attention Acceleration, <a href="https://arxiv.org/pdf/2410.10165" target="_blank">arXiv:2410.10165</a></li>
+    </ol>
+</div>
 
+<!-- Japanese Content -->
+<div lang="ja">
+    <h1>Bo Chen(Ryuji Sakamoto)</h1>
+    <p><img src="2019Summer.jpg" height="300" name="sshow"  /></p>
+    <p>学部生</p>
+    <p>ミドルテネシー州立大学 数学科</p>
+    
+    <h1 style="text-align: left;">略歴</h1>
+    <p style="text-align: left;">初めまして、坂本竜司と申します。現在、ミドルテネシー州立大学理工学部数学科の4年生として在籍しております。研究テーマは、マルチモーダルモデルの性能向上に関する研究で、特に大規模機械学習システムのトレーニングワークフローの最適化に力を入れております。 2026年秋からの研究職または博士課程での研究機会を探しております。ご興味をお持ちいただけましたら、ぜひご連絡いただけますと幸いです。どうぞよろしくお願い申し上げます。</p>
 
+    <h1 style="text-align: left;">個人情報</h1>
+    <ul style="text-align: left;">
+        <li><a href="https://scholar.google.com/citations?hl=en&user=BWfZIIYAAAAJ" target="_blank">Google Scholar</a></li>
+        <li>メール: bc7b at mtmail.mtsu.com</li>
+        <li><a href="cv-detailed.pdf">履歴書 (pdf)</a></li>
+    </ul>
+    
+    <h1 style="text-align: left;">最新のプレプリント</h1>
+    <ol style="text-align: left;">
+        <li>指数関数的依存性の回避：ループ型Transformerによる多段階勾配降下法を用いた効率的な文脈内学習, <a href="https://arxiv.org/pdf/2410.11268" target="_blank">arXiv:2410.11268</a></li>
+        <li>HSRによるスパース注意機構の高速化, <a href="https://arxiv.org/pdf/2410.10165" target="_blank">arXiv:2410.10165</a></li>
+    </ol>
+</div>
 
-<h1 style="text-align: left;">Bio</h1>
-<p style="text-align: left;">Hi, I'm Bo Chen(陈波), my Japanese name is Ryuji Sakamoto(坂本 竜司). I'm now a final-year undergraduate student majoring in Mathmetics, at Department of Mathematical Sciences, Middle Tenneessee State University. My research interests lie at enhancing the capabilities of multi-modality models. I am working to boost the efficiency of training workflows in large-scale machine learning systems. I'm actively looking for research opportunities and Ph.D position in 2026 Fall! Feel free to contact if you think I'm a good fit.</p>
+<script type="text/javascript">
+// Language switcher functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get language preference from localStorage
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    switchLanguage(savedLang);
 
+    // Add click handlers to language buttons
+    document.querySelectorAll('.language-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            switchLanguage(lang);
+        });
+    });
+});
 
+function switchLanguage(lang) {
+    // Save language preference
+    localStorage.setItem('preferredLanguage', lang);
 
-<h1 style="text-align: left;">Personal imformation</h1>
-<ul style="text-align: left;">
-    <li><a href="https://scholar.google.com/citations?hl=en&user=BWfZIIYAAAAJ" target="_blank">Google Scholar</a></li>
-    <li>E-MAIL: bc7b at mtmail.mtsu.com</li>
-    <li><a href="cv-detailed.pdf">Curriculum Vitae (pdf)</a></li>
-</ul>
-<hr />
+    // Update button states
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
 
-<h1 style="text-align: left;">Recent preprints</h1>
-<ol style="text-align: left;">
-    <li>Bypassing the Exponential Dependency: Looped Transformers Efficiently Learn In-context by Multi-step Gradient Descent, <a href="https://arxiv.org/pdf/2410.11268" target="_blank">arXiv:2410.11268</a></li>
-    <li>HSR-Enhanced Sparse Attention Acceleration, <a href="https://arxiv.org/pdf/2410.10165" target="_blank">arXiv:2410.10165</a></li>
-</ol>
-<hr />
+    // Show selected language content, hide others
+    document.querySelectorAll('[lang]').forEach(element => {
+        element.classList.toggle('active', element.getAttribute('lang') === lang);
+    });
+}
+</script>
 
-
-<p>&nbsp;</p>
 </body>
 </html>
